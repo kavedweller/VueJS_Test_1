@@ -22,6 +22,8 @@ export default {
     },
     methods: {
         updateTask() {
+            this.taskToEdit.name = this.editedTaskName;
+            this.taskToEdit.time = this.editedTaskTime;
             this.$emit('task-updated');
         },
     },
